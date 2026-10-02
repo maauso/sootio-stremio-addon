@@ -65,9 +65,12 @@ importers:
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
+      parse-torrent:
+        specifier: 11.0.24
+        version: 11.0.24
       parse-torrent-title:
         specifier: github:TheBeastLT/parse-torrent-title#b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d
-        version: https://codeload.github.com/TheBeastLT/parse-torrent-title/tar.gz/b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d
+        version: git+https://github.com/TheBeastLT/parse-torrent-title.git#b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d
       pg:
         specifier: ^8.16.3
         version: 8.16.3
@@ -549,6 +552,10 @@ packages:
   '@sinonjs/fake-timers@13.0.5':
     resolution: {integrity: sha512-36/hTbH2uaWuGVERyC6da9YwGWnzUZXuPro/F2LfsdOsLnCojz/iSH8MxUt/FD2S5XBSVPhmArFUXcpCQ2Hkiw==}
 
+  '@thaunknown/thirty-two@1.0.6':
+    resolution: {integrity: sha512-Uz2kFb0cNeHg7hds8BtI/umcwzaSMUdbkeQgZrIZQbp3gWRFjrvrvBHNEB6SQYChVxC3rWHovKx1Ya/vSRRMYA==}
+    engines: {node: '>=0.2.6'}
+
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
@@ -602,6 +609,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@unrs/resolver-binding-android-arm-eabi@1.11.1':
     resolution: {integrity: sha512-ppLRUgHVaGRWUx0R0Ut06Mjo9gBaBkg3v/8AxusGLhsIotbBLuRk51rAzqLC8gq6NyyAojEXglNjzf6R948DNw==}
@@ -697,6 +705,10 @@ packages:
     resolution: {integrity: sha512-lrW200hZdbfRtztbygyaq/6jP6AKE8qQN2KvPcJ+x7wiD038YtnYtZ82IMNJ69GJibV7bwL3y9FgK+5w/pYt6g==}
     cpu: [x64]
     os: [win32]
+
+  abort-controller@3.0.0:
+    resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
+    engines: {node: '>=6.5'}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -899,6 +911,14 @@ packages:
 
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
+
+  bencode@4.0.1:
+    resolution: {integrity: sha512-/bCR3FvgfB8AZk4LlowShU+nfaTNRM2vruJ9aejDa5LpgkCoRjFyEauFiZFxbpxVxQbBFapYCN42Er2dkE/Qgw==}
+    engines: {node: '>=12.20.0'}
+
+  bep53-range@2.0.1:
+    resolution: {integrity: sha512-VWN7j7sqUssWD6ROZe2m709YL3u5A1IAx1qvAbH3DAhszHt4WPvCzJLRJ+mzmZn1qWIb4mpflwdn95qezz3n8g==}
+    engines: {node: '>=12.20.0'}
 
   better-sqlite3@11.10.0:
     resolution: {integrity: sha512-EwhOpyXiOEL/lKzHz9AW1msWFNzGc/z+LzeB3/jnFJpxu+th2yqvzsSWas1v9jgs9+xiXJcD5A8CJxAG2TaghQ==}
@@ -1111,6 +1131,9 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  cross-fetch-ponyfill@1.0.3:
+    resolution: {integrity: sha512-uOBkDhUAGAbx/FEzNKkOfx3w57H8xReBBXoZvUnOKTI0FW0Xvrj3GrYv2iZXUqlffC1LMGfQzhmBM/ke+6eTDA==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1344,6 +1367,10 @@ packages:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
 
+  event-target-shim@5.0.1:
+    resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
+    engines: {node: '>=6'}
+
   events-universal@1.0.1:
     resolution: {integrity: sha512-LUd5euvbMLpwOF8m6ivPCbhQeSiYVNb8Vs0fQ8QjXo0JTkEHpz8pxdQf0gStltaPpw0Cca8b39KxvK9cfKRiAw==}
 
@@ -1521,6 +1548,10 @@ packages:
     resolution: {integrity: sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==}
     engines: {node: '>= 0.4'}
 
+  get-stdin@10.0.0:
+    resolution: {integrity: sha512-eWSePJ4zXFdqz+/Lyfopob4rIcoF/U2XfE8nJc7iZV6lnebWc9k7DoQQpX+2a9jc0AOvBsXvbe5YkjXl/MHbpg==}
+    engines: {node: '>=20'}
+
   get-stream@5.2.0:
     resolution: {integrity: sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==}
     engines: {node: '>=8'}
@@ -1545,11 +1576,12 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   gopd@1.1.0:
     resolution: {integrity: sha512-FQoVQnqcdk4hVM4JN1eromaun4iuS34oStkdlLENLdpULsuQcTyXj8w7ayhuUfPwEYZ1ZOooOTT6fdA9Vmx/RA==}
@@ -1995,6 +2027,10 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
+  magnet-uri@7.0.10:
+    resolution: {integrity: sha512-PjS/xWnvq9RK6P/8+dWG7ka3mFGGt/R9xiq5A+P8a8MpE40Dw6yNyTdjCFuJHS3apn6p5bJUCzMSceW3VxezRA==}
+    engines: {node: '>=12.20.0'}
+
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
@@ -2123,6 +2159,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -2228,10 +2265,15 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
 
-  parse-torrent-title@https://codeload.github.com/TheBeastLT/parse-torrent-title/tar.gz/b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d:
-    resolution: {tarball: https://codeload.github.com/TheBeastLT/parse-torrent-title/tar.gz/b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d}
+  parse-torrent-title@git+https://github.com/TheBeastLT/parse-torrent-title.git#b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d:
+    resolution: {commit: b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d, repo: https://github.com/TheBeastLT/parse-torrent-title.git, type: git}
     version: 1.3.0
     engines: {node: '>=12'}
+
+  parse-torrent@11.0.24:
+    resolution: {integrity: sha512-6nNWYiJq6egD8pMqZYL1mfnAly9ZH32DHkAYgZuAfwWij52ce7e3BtrWGVw2q1Bpb5Us8YQVGN7ML/47z/bVIA==}
+    engines: {node: '>=12.20.0'}
+    hasBin: true
 
   parse5-htmlparser2-tree-adapter@7.1.0:
     resolution: {integrity: sha512-ruw5xyKs6lrpo9x9rCZqZZnIUntICjQAd0Wsmp396Ul9lN/h+ifgVV1x1gZHi8euej6wTfpqX8j+BFQxF0NS/g==}
@@ -2349,6 +2391,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   premiumize-api@1.0.3:
@@ -2365,6 +2408,7 @@ packages:
   prom-client@14.2.0:
     resolution: {integrity: sha512-sF308EhTenb/pDRPakm+WgiN+VdM/T1RaHj1x+MvAuT8UiQP8JmOEbxVqtkbfR4LrvOg5n7ic01kRBDGXjYikA==}
     engines: {node: '>=10'}
+    deprecated: prom-client has been replaced by @prometheus-io/client
 
   proxy-addr@2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
@@ -2476,6 +2520,9 @@ packages:
   qs@6.5.3:
     resolution: {integrity: sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==}
     engines: {node: '>=0.6'}
+
+  queue-microtask@1.2.3:
+    resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
@@ -2863,6 +2910,9 @@ packages:
   typed-query-selector@2.12.1:
     resolution: {integrity: sha512-uzR+FzI8qrUEIu96oaeBJmd9E7CFEiQ3goA5qCVgc4s5llSubcfGHq9yUstZx/k4s9dXHVKsE35YWoFyvEqEHA==}
 
+  uint8-util@2.3.2:
+    resolution: {integrity: sha512-u1c0/eiT1IW+c5+ogbmE2Fu2hmtJQPkuzDmXD/4crMU4FPMjkTkFnjJ2NN/9AsZ9YWcc7yE869uc3WB8wIZEEA==}
+
   undefsafe@2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
 
@@ -2905,11 +2955,12 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-to-istanbul@9.3.0:
@@ -2940,6 +2991,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -3556,6 +3608,10 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
+  '@thaunknown/thirty-two@1.0.6':
+    dependencies:
+      uint8-util: 2.3.2
+
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
   '@torbox/torbox-api@1.0.6':
@@ -3681,6 +3737,10 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
+
+  abort-controller@3.0.0:
+    dependencies:
+      event-target-shim: 5.0.1
 
   accepts@1.3.8:
     dependencies:
@@ -3883,6 +3943,12 @@ snapshots:
   bcrypt-pbkdf@1.0.2:
     dependencies:
       tweetnacl: 0.14.5
+
+  bencode@4.0.1:
+    dependencies:
+      uint8-util: 2.3.2
+
+  bep53-range@2.0.1: {}
 
   better-sqlite3@11.10.0:
     dependencies:
@@ -4128,6 +4194,11 @@ snapshots:
       js-yaml: 4.1.1
       parse-json: 5.2.0
 
+  cross-fetch-ponyfill@1.0.3:
+    dependencies:
+      abort-controller: 3.0.0
+      node-fetch: 3.3.2
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -4312,6 +4383,8 @@ snapshots:
   esutils@2.0.3: {}
 
   etag@1.8.1: {}
+
+  event-target-shim@5.0.1: {}
 
   events-universal@1.0.1:
     dependencies:
@@ -4539,6 +4612,8 @@ snapshots:
     dependencies:
       dunder-proto: 1.0.1
       es-object-atoms: 1.1.1
+
+  get-stdin@10.0.0: {}
 
   get-stream@5.2.0:
     dependencies:
@@ -5182,6 +5257,12 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
+  magnet-uri@7.0.10:
+    dependencies:
+      '@thaunknown/thirty-two': 1.0.6
+      bep53-range: 2.0.1
+      uint8-util: 2.3.2
+
   make-dir@4.0.0:
     dependencies:
       semver: 7.7.4
@@ -5388,9 +5469,18 @@ snapshots:
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
-  parse-torrent-title@https://codeload.github.com/TheBeastLT/parse-torrent-title/tar.gz/b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d:
+  parse-torrent-title@git+https://github.com/TheBeastLT/parse-torrent-title.git#b98e2ba2fb64fd5fa1c34c620bd9050bbc2e271d:
     dependencies:
       moment: 2.30.1
+
+  parse-torrent@11.0.24:
+    dependencies:
+      bencode: 4.0.1
+      cross-fetch-ponyfill: 1.0.3
+      get-stdin: 10.0.0
+      magnet-uri: 7.0.10
+      queue-microtask: 1.2.3
+      uint8-util: 2.3.2
 
   parse5-htmlparser2-tree-adapter@7.1.0:
     dependencies:
@@ -5647,6 +5737,8 @@ snapshots:
       side-channel: 1.0.6
 
   qs@6.5.3: {}
+
+  queue-microtask@1.2.3: {}
 
   range-parser@1.2.1: {}
 
@@ -6159,6 +6251,8 @@ snapshots:
       mime-types: 2.1.35
 
   typed-query-selector@2.12.1: {}
+
+  uint8-util@2.3.2: {}
 
   undefsafe@2.0.5: {}
 
