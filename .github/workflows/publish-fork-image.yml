@@ -24,7 +24,7 @@ permissions:
 
 jobs:
   test:
-    name: Test Jackett resolver
+    name: Test fork patches
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -43,12 +43,13 @@ jobs:
 
       # The upstream npm test script invokes the shell wrapper through Node and
       # does not enable ESM support, so run the focused suite explicitly.
-      - name: Run resolver tests
+      - name: Run focused tests
         run: >-
           node --experimental-vm-modules
           node_modules/jest/bin/jest.js
           --runInBand
           tests/jackett-torrent-resolver.test.js
+          tests/search-coordinator.test.js
 
   publish:
     name: Build and push image
